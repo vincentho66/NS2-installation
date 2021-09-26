@@ -1,7 +1,10 @@
 #!/bin/bash
 apt update
+sleep 1
 apt install gcc g++ make libxt-dev libx11-dev -y
+sleep 5
 ./ns-allinone-2.35/install
-echo "Done! Try \"ns\" command and see if it showed \"%\"\n"
+sleep 1
+echo "Done! Try \"ns\" command and see if it showed \"%\""
 
 exit 0
