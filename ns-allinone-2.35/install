@@ -699,7 +699,7 @@ echo "for related posts."
 echo ""
 
 echo "export PATH=\$PATH:$CUR_PATH/bin:$CUR_PATH/tcl$TCLVER/unix:$CUR_PATH/tk$TKVER/unix" >> ~/.bashrc
-echo "LD_LIBRARY_PATH=$CUR_PATH/otcl-$OTCLVER:$CUR_PATH/lib" >> ~/.bashrc
+echo "export LD_LIBRARY_PATH=$CUR_PATH/otcl-$OTCLVER:$CUR_PATH/lib" >> ~/.bashrc
 
 
 exit 0
