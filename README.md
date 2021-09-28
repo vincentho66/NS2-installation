@@ -16,6 +16,11 @@ cd NS2-installation
 ```bash=
 sudo ./install
 ```
+Tt will take a while, after seeing "Done!", run:
+
+```bash=
+source ~/.bashrc
+```
 
 And there you go, try "ns" command and see if it works.
 
@@ -36,9 +41,9 @@ ns example.tcl
 ```
 
 
-## Troubleshooting
+<!-- ## Troubleshooting -->
 
-1. Command "ns" not found... Try:
-```bash=
-source ~/.bashrc
-```
+<!-- 1. Command "ns" not found... Try: -->
+<!-- ```bash= -->
+<!-- source ~/.bashrc -->
+<!-- ``` -->
