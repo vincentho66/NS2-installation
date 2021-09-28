@@ -22,7 +22,7 @@ And there you go, try "ns" command and see if it works.
 
 ## Troubleshooting
 
-1. Command "ns" not found.
+1. Command "ns" not found...</br>
 Try:
 ```bash=
 source ~/.bashrc
