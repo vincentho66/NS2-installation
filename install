@@ -5,8 +5,7 @@ apt install gcc g++ make libxt-dev libx11-dev nam xorg-dev libxmu-dev libperl4-c
 sleep 1
 cd ./ns-allinone-2.35/
 ./install
-sleep 2
-source ~/.bashrc
-echo "Done! Try \"ns\" command and see if it showed \"%\""
+sleep 1
+echo "Done!"
 
 exit 0
