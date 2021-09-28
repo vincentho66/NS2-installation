@@ -26,10 +26,6 @@ There's a test script in **ns-allinone-2.35/ns-2.35**. Simply run the script whi
 ```bash=
 sudo ./validate
 ```
-Then check the log file.
-```bash=
-cat validate.out
-```
 
 
 ## Run a simple simulation
