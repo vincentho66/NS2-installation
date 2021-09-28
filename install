@@ -1,8 +1,8 @@
 #!/bin/bash
 apt update
 sleep 1
-apt install gcc g++ make libxt-dev libx11-dev -y
-sleep 2
+apt install gcc g++ make libxt-dev libx11-dev nam -y
+sleep 1
 cd ./ns-allinone-2.35/
 ./install
 sleep 1
