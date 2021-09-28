@@ -20,10 +20,29 @@ sudo ./install
 And there you go, try "ns" command and see if it works.
 
 
+## Verify installation
+
+There's a test script in **ns-allinone-2.35/ns-2.35**. Simply run the script which calls **validate**.
+```bash=
+sudo ./validate
+```
+Then check the log file.
+```bash=
+cat validate.out
+```
+
+
+## Run a simple simulation
+
+You can find lots of test file in **ns-allinone-2.35/ns-2.35/tcl/ex**. For instance, you wanna simulate **example.tcl**, just type:
+```bash=
+ns example.tcl
+```
+
+
 ## Troubleshooting
 
-1. Command "ns" not found...</br>
-Try:
+1. Command "ns" not found... Try:
 ```bash=
 source ~/.bashrc
 ```
