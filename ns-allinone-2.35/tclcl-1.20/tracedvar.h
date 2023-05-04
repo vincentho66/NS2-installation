@@ -124,6 +124,7 @@ public:
 	inline int operator&=(int v) { return operator=(val_ & v); }
 	inline int operator|=(int v) { return operator=(val_ | v); }
 	inline int operator^=(int v) { return operator=(val_ ^ v); }
+    
 
 	virtual char* value(char* buf, int buflen);
 protected:
