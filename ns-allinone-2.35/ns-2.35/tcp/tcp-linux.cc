@@ -151,7 +151,7 @@ unsigned char LinuxTcpAgent::ack_processing(Packet* pkt, unsigned char flag)
 	if (flag&FLAG_DATA_ACKED) {
 		highest_ack_ = tcph->seqno();
 		linux_.snd_una = (highest_ack_+1)*linux_.mss_cache;
-		maxseq_ = max(int(maxseq_), int(highest_ack_));
+		maxseq_ = max(maxseq_, highest_ack_);
 		if (t_seqno_ < highest_ack_ + 1) {
 			t_seqno_ = highest_ack_ + 1;
 			linux_.snd_nxt = t_seqno_*linux_.mss_cache;
