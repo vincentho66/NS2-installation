@@ -89,12 +89,12 @@ public:
 class TracedInt : public TracedVar {
 public:
 	TracedInt() : TracedVar() {}
-	TracedInt(int v) : TracedVar(), val_(v) {
+	TracedInt( int v) : TracedVar(), val_(v) {
 		initialized_ = true;
 	}
 	virtual ~TracedInt() {}
 	// implicit conversion operators
-	inline operator int() { return val_; }
+	inline operator int() const { return val_; }
 	// unary operators
 	inline int operator++() { assign(val_ + 1); return val_; }
 	inline int operator--() { assign(val_ - 1); return val_; }
