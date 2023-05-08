@@ -1,7 +1,7 @@
 # NS2-installation
 
 > A very simple way to install NS2 on your Linux devices.</br>
-> Compatible with Ubuntu 18.04 LTS or below.
+> Compatible with Ubuntu 22.04 LTS or below.
 
 All you need to do is copy and paste the following commands.
 
