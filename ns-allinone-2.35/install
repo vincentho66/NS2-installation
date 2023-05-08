@@ -192,6 +192,8 @@ DEI80211MRVER=1.1.4
 
 # Get current path
 CUR_PATH=`pwd`
+userdir=$(eval echo ~$SUDO_USER)
+userdir=$userdir"/.bashrc"
 
 echo "============================================================"
 echo "* Testing for Darwin (OS X) environment"
@@ -698,8 +700,8 @@ echo "http://www.isi.edu/nsnam/ns/ns-problems.html. Also search the ns mailing l
 echo "for related posts." 
 echo ""
 
-echo "export PATH=\$PATH:$CUR_PATH/bin:$CUR_PATH/tcl$TCLVER/unix:$CUR_PATH/tk$TKVER/unix" >> ~/.bashrc
-echo "export LD_LIBRARY_PATH=$CUR_PATH/otcl-$OTCLVER:$CUR_PATH/lib" >> ~/.bashrc
+echo "export PATH=\$PATH:$CUR_PATH/bin:$CUR_PATH/tcl$TCLVER/unix:$CUR_PATH/tk$TKVER/unix" >> $userdir
+echo "export LD_LIBRARY_PATH=$CUR_PATH/otcl-$OTCLVER:$CUR_PATH/lib" >> $userdir
 
 
 exit 0
